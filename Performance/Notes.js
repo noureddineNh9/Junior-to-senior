@@ -65,14 +65,24 @@
       And that's why we called javascript a parser blocking. 
 
       > Load Scripts asynchronously
-         < <script async> Add them to anything that doesn't affect the DOM or the CSS document object model. 
-         < So async should be used for pretty much all external scripts that require no knowledge of our code
+         / <script async> Add them to anything that doesn't affect the DOM or the CSS document object model. 
+         So async should be used for pretty much all external scripts that require no knowledge of our code
+
       > Defer Loading of scripts 
-      
+         / <script defer> it's going to wait until a HTML is completely parsed and then start executing.
+
       > Minimize DOM manipulation 
-      
+         / <script src="./script1.js"></script>
+         / <script src="./script2.js"></script>
+         / <script src="./script3.js"></script>
+
+         result : 
+            this is script 1
+            this is script 2
+            this is script 3
+            DOM fully loaded and parsed
+            All resources finished loading!
+         
       > Avoid long running Javascript 
-      
- 
- 
+         
 */
