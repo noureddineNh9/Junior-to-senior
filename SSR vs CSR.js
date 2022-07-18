@@ -18,7 +18,12 @@
       > Slower page rendering, requests to server
 
    
+- use 'Now' to deploy  Next js Application
 
+
+#Progressive rendering 
+   (code spleting)
+   
 
 
 
